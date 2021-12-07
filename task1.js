@@ -1,7 +1,9 @@
 'use strict';
 
-const colors = require("colors/safe");
-const process = require("process");
+// const colors = require("colors/safe");
+// const process = require("process");
+import colors from "colors/safe.js"
+import * as process from "process";
 
 
 const log = console.log;
