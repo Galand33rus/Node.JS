@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "node.js course",
   "main": "index.js",
-  "dependencies": {
-    "colors": "^1.4.0",
-    "process": "^0.11.10"
-  },
-  "devDependencies": {},
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
