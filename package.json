@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Galand33rus/Node.JS/issues"
   },
-  "homepage": "https://github.com/Galand33rus/Node.JS#readme"
+  "homepage": "https://github.com/Galand33rus/Node.JS#readme",
+  "dependencies": {
+    "date-fns": "^2.27.0",
+    "process": "^0.11.10"
+  }
 }
