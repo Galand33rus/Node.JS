@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node reader.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/Galand33rus/Node.JS/issues"
   },
-  "homepage": "https://github.com/Galand33rus/Node.JS#readme"
+  "homepage": "https://github.com/Galand33rus/Node.JS#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "inquirer": "^8.2.0",
+    "yargs": "^17.3.0"
+  }
 }
