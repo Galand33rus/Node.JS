@@ -31,7 +31,7 @@ const getPathway = (path, filename) => {
  * @param {string} url
  * @returns {string}
  */
-const insertLinks = (filepath, url) => {
+const getLinks = (filepath, url) => {
   const listFiles = fs.readdirSync(filepath);
   const listFilesWithPath = listFiles.map(filename => getPathway(url, filename))
   const links = listFilesWithPath.map(([filepath, filename]) => `<li><a href="${filepath}">${filename}</a></li>`)
@@ -51,6 +51,6 @@ http.createServer((request, response) => {
   response.writeHead(200, 'OK', {
     'Content-Type': 'text/html'
   });
-  response.end(insertLinks(fullPath, url));
+  response.end(getLinks(fullPath, url));
 }).listen(port, () => console.log(`Listen on port ${port}...`));
 
